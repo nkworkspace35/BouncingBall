@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bounce Ball</title>
+        <style>
+            body{
+            margin:0;
+            height:100vh;
+            background-image:url("./bg.avif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+            }
+            .common{
+                width:50px;
+                height:50px;
+                border-radius:50px;
+                display:inline-block;
+                animation-name: bounce;
+                animation-timing-function:inherit;
+                animation-duration:1s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+            .c1{
+                background:red;
+                animation-delay: 0s;
+            }
+            .c2{
+                background: green;
+                 animation-delay: 0.1s;
+            }
+            .c3{
+                background: orange;
+                 animation-delay: 0.2s;
+
+            }
+            .c4{
+                background: blue;
+                 animation-delay: 0.3s;
+
+            }
+            .c5{
+                background: purple;
+                 animation-delay: 0.4s;
+            }
+            .c6{
+                 background: brown;
+                 animation-delay: 0.5s;
+            }
+            @keyframes bounce{
+                0%{
+                    transform:translateY(0px);
+                }
+                100%{
+                     transform:translateY(80px);
+                }
+            }
+            .watermark{
+                position:fixed;
+                top:50%;
+                left:50%;
+                transform:translate(-50%,-50%)
+                rotate(-30deg);
+                font-size: 80px;
+                color:black;
+                opacity:0.1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="common c1" ></div>
+        <div class="common c2" ></div>
+        <div class="common c3" ></div>
+        <div class="common c4" ></div>
+        <div class="common c5" ></div>
+        <div class="common c6" ></div>
+        <div class="watermark">This Website is Currently Under Process</div>
+        
+    </body>
+</html>
